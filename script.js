@@ -1,5 +1,8 @@
 const form = document.querySelector("#form-habits")
 
+var bigBox = document.getElementById("bigBox")
+bigBox.scrollIntoView();
+
 var days = {
   d0101: false,
   d0201: false,
