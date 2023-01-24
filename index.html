@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habits</title>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- <img src="./assets/logo.svg" alt="Logomarca do aplicativo Habits" /> -->
+    <h1>Registre se um hábito foi feito em cada dia do ano!</h1>
+    <!-- <button>
+      <img src="./assets/plus.svg" alt="ícone sinal de mais roxo" />
+
+      Registrar o meu dia
+    </button> -->
+  </header>
+
+  <form id="form-habits">
+    <div class="habits">
+      <!-- <div class="habit">Domingo</div>
+        <div class="habit">Segunda</div>
+        <div class="habit">Terça</div>
+        <div class="habit">Quarta</div>
+        <div class="habit">Quinta</div>
+        <div class="habit">Sexta</div>
+        <div class="habit">Sábado</div> -->
+    </div>
+
+
+    <div class="days">
+      <div class="leters">
+        <div class="weekLeters">D</div>
+        <div class="weekLeters">S</div>
+        <div class="weekLeters">T</div>
+        <div class="weekLeters">Q</div>
+        <div class="weekLeters">Q</div>
+        <div class="weekLeters">S</div>
+        <div class="weekLeters">S</div>
+      </div>
+      <!----------------------------------------  --------------------------------------------------->
+      <!--------------------------------JANEIRO ----------------------------------------------->
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0101')" id="d0101" title="01/01" />
+        <input type="checkbox" onclick="markDay('d0201')" id="d0201" title="02/01" />
+        <input type="checkbox" onclick="markDay('d0301')" id="d0301" title="03/01" />
+        <input type="checkbox" onclick="markDay('d0401')" id="d0401" title="04/01" />
+        <input type="checkbox" onclick="markDay('d0501')" id="d0501" title="05/01" />
+        <input type="checkbox" onclick="markDay('d0601')" id="d0601" title="06/01" />
+        <input type="checkbox" onclick="markDay('d0701')" id="d0701" title="07/01" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0801')" id="d0801" title="08/01" />
+        <input type="checkbox" onclick="markDay('d0901')" id="d0901" title="09/01" />
+        <input type="checkbox" onclick="markDay('d1001')" id="d1001" title="10/01" />
+        <input type="checkbox" onclick="markDay('d1101')" id="d1101" title="11/01" />
+        <input type="checkbox" onclick="markDay('d1201')" id="d1201" title="12/01" />
+        <input type="checkbox" onclick="markDay('d1301')" id="d1301" title="13/01" />
+        <input type="checkbox" onclick="markDay('d1401')" id="d1401" title="14/01" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1501')" id="d1501" title="15/01" />
+        <input type="checkbox" onclick="markDay('d1601')" id="d1601" title="16/01" />
+        <input type="checkbox" onclick="markDay('d1701')" id="d1701" title="17/01" />
+        <input type="checkbox" onclick="markDay('d1801')" id="d1801" title="18/01" />
+        <input type="checkbox" onclick="markDay('d1901')" id="d1901" title="19/01" />
+        <input type="checkbox" onclick="markDay('d2001')" id="d2001" title="20/01" />
+        <input type="checkbox" onclick="markDay('d2101')" id="d2101" title="21/01" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2201')" id="d2201" title="22/01" />
+        <input type="checkbox" onclick="markDay('d2301')" id="d2301" title="23/01" />
+        <input type="checkbox" onclick="markDay('d2401')" id="d2401" title="24/01" />
+        <input type="checkbox" onclick="markDay('d2501')" id="d2501" title="25/01" />
+        <input type="checkbox" onclick="markDay('d2601')" id="d2601" title="26/01" />
+        <input type="checkbox" onclick="markDay('d2701')" id="d2701" title="27/01" />
+        <input type="checkbox" onclick="markDay('d2801')" id="d2801" title="28/01" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2901')" id="d2901" title="29/01" />
+        <input type="checkbox" onclick="markDay('d3001')" id="d3001" title="30/01" />
+        <input type="checkbox" onclick="markDay('d3101')" id="d3101" title="31/01" />
+        <!-------------------------------- FEVEREIRO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0102')" id="d0102" title="01/02" />
+        <input type="checkbox" onclick="markDay('d0202')" id="d0202" title="02/02" />
+        <input type="checkbox" onclick="markDay('d0302')" id="d0302" title="03/02" />
+        <input type="checkbox" onclick="markDay('d0402')" id="d0402" title="04/02" />
+      </div>
+
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0502')" id="d0502" title="05/02" />
+        <input type="checkbox" onclick="markDay('d0602')" id="d0602" title="06/02" />
+        <input type="checkbox" onclick="markDay('d0702')" id="d0702" title="07/02" />
+        <input type="checkbox" onclick="markDay('d0802')" id="d0802" title="08/02" />
+        <input type="checkbox" onclick="markDay('d0902')" id="d0902" title="09/02" />
+        <input type="checkbox" onclick="markDay('d1002')" id="d1002" title="10/02" />
+        <input type="checkbox" onclick="markDay('d1102')" id="d1102" title="11/02" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1202')" id="d1202" title="12/02" />
+        <input type="checkbox" onclick="markDay('d1302')" id="d1302" title="13/02" />
+        <input type="checkbox" onclick="markDay('d1402')" id="d1402" title="14/02" />
+        <input type="checkbox" onclick="markDay('d1502')" id="d1502" title="15/02" />
+        <input type="checkbox" onclick="markDay('d1602')" id="d1602" title="16/02" />
+        <input type="checkbox" onclick="markDay('d1702')" id="d1702" title="17/02" />
+        <input type="checkbox" onclick="markDay('d1802')" id="d1802" title="18/02" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1902')" id="d1902" title="19/02" />
+        <input type="checkbox" onclick="markDay('d2002')" id="d2002" title="20/02" />
+        <input type="checkbox" onclick="markDay('d2102')" id="d2102" title="21/02" />
+        <input type="checkbox" onclick="markDay('d2202')" id="d2202" title="22/02" />
+        <input type="checkbox" onclick="markDay('d2302')" id="d2302" title="23/02" />
+        <input type="checkbox" onclick="markDay('d2402')" id="d2402" title="24/02" />
+        <input type="checkbox" onclick="markDay('d2502')" id="d2502" title="25/02" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2602')" id="d2602" title="26/02" />
+        <input type="checkbox" onclick="markDay('d2702')" id="d2702" title="27/02" />
+        <input type="checkbox" onclick="markDay('d2802')" id="d2802" title="28/02" />
+        <!-------------------------------- MARÇO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0103')" id="d0103" title="01/03" />
+        <input type="checkbox" onclick="markDay('d0203')" id="d0203" title="02/03" />
+        <input type="checkbox" onclick="markDay('d0303')" id="d0303" title="03/03" />
+        <input type="checkbox" onclick="markDay('d0403')" id="d0403" title="04/03" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0503')" id="d0503" title="05/03" />
+        <input type="checkbox" onclick="markDay('d0603')" id="d0603" title="06/03" />
+        <input type="checkbox" onclick="markDay('d0703')" id="d0703" title="07/03" />
+        <input type="checkbox" onclick="markDay('d0803')" id="d0803" title="08/03" />
+        <input type="checkbox" onclick="markDay('d0903')" id="d0903" title="09/03" />
+        <input type="checkbox" onclick="markDay('d1003')" id="d1003" title="10/03" />
+        <input type="checkbox" onclick="markDay('d1103')" id="d1103" title="11/03" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1203')" id="d1203" title="12/03" />
+        <input type="checkbox" onclick="markDay('d1303')" id="d1303" title="13/03" />
+        <input type="checkbox" onclick="markDay('d1403')" id="d1403" title="14/03" />
+        <input type="checkbox" onclick="markDay('d1503')" id="d1503" title="15/03" />
+        <input type="checkbox" onclick="markDay('d1603')" id="d1603" title="16/03" />
+        <input type="checkbox" onclick="markDay('d1703')" id="d1703" title="17/03" />
+        <input type="checkbox" onclick="markDay('d1803')" id="d1803" title="18/03" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1903')" id="d1903" title="19/03" />
+        <input type="checkbox" onclick="markDay('d2003')" id="d2003" title="20/03" />
+        <input type="checkbox" onclick="markDay('d2103')" id="d2103" title="21/03" />
+        <input type="checkbox" onclick="markDay('d2203')" id="d2203" title="22/03" />
+        <input type="checkbox" onclick="markDay('d2303')" id="d2303" title="23/03" />
+        <input type="checkbox" onclick="markDay('d2403')" id="d2403" title="24/03" />
+        <input type="checkbox" onclick="markDay('d2503')" id="d2503" title="25/03" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2603')" id="d2603" title="26/03" />
+        <input type="checkbox" onclick="markDay('d2703')" id="d2703" title="27/03" />
+        <input type="checkbox" onclick="markDay('d2803')" id="d2803" title="28/03" />
+        <input type="checkbox" onclick="markDay('d2903')" id="d2903" title="29/03" />
+        <input type="checkbox" onclick="markDay('d3003')" id="d3003" title="30/03" />
+        <input type="checkbox" onclick="markDay('d3103')" id="d3103" title="31/03" />
+        <!-------------------------------- ABRIL ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0104')" id="d0104" title="01/04" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0204')" id="d0204" title="02/04" />
+        <input type="checkbox" onclick="markDay('d0304')" id="d0304" title="03/04" />
+        <input type="checkbox" onclick="markDay('d0404')" id="d0404" title="04/04" />
+        <input type="checkbox" onclick="markDay('d0504')" id="d0504" title="05/04" />
+        <input type="checkbox" onclick="markDay('d0604')" id="d0604" title="06/04" />
+        <input type="checkbox" onclick="markDay('d0704')" id="d0704" title="07/04" />
+        <input type="checkbox" onclick="markDay('d0804')" id="d0804" title="08/04" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0904')" id="d0904" title="09/04" />
+        <input type="checkbox" onclick="markDay('d1004')" id="d1004" title="10/04" />
+        <input type="checkbox" onclick="markDay('d1104')" id="d1104" title="11/04" />
+        <input type="checkbox" onclick="markDay('d1204')" id="d1204" title="12/04" />
+        <input type="checkbox" onclick="markDay('d1304')" id="d1304" title="13/04" />
+        <input type="checkbox" onclick="markDay('d1404')" id="d1404" title="14/04" />
+        <input type="checkbox" onclick="markDay('d1504')" id="d1504" title="15/04" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1604')" id="d1604" title="16/04" />
+        <input type="checkbox" onclick="markDay('d1704')" id="d1704" title="17/04" />
+        <input type="checkbox" onclick="markDay('d1804')" id="d1804" title="18/04" />
+        <input type="checkbox" onclick="markDay('d1904')" id="d1904" title="19/04" />
+        <input type="checkbox" onclick="markDay('d2004')" id="d2004" title="20/04" />
+        <input type="checkbox" onclick="markDay('d2104')" id="d2104" title="21/04" />
+        <input type="checkbox" onclick="markDay('d2204')" id="d2204" title="22/04" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2304')" id="d2304" title="23/04" />
+        <input type="checkbox" onclick="markDay('d2404')" id="d2404" title="24/04" />
+        <input type="checkbox" onclick="markDay('d2504')" id="d2504" title="25/04" />
+        <input type="checkbox" onclick="markDay('d2604')" id="d2604" title="26/04" />
+        <input type="checkbox" onclick="markDay('d2704')" id="d2704" title="27/04" />
+        <input type="checkbox" onclick="markDay('d2804')" id="d2804" title="28/04" />
+        <input type="checkbox" onclick="markDay('d2904')" id="d2904" title="29/04" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d3004')" id="d3004" title="30/04" />
+        <!-------------------------------- MAIO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0105')" id="d0105" title="01/05" />
+        <input type="checkbox" onclick="markDay('d0205')" id="d0205" title="02/05" />
+        <input type="checkbox" onclick="markDay('d0305')" id="d0305" title="03/05" />
+        <input type="checkbox" onclick="markDay('d0405')" id="d0405" title="04/05" />
+        <input type="checkbox" onclick="markDay('d0505')" id="d0505" title="05/05" />
+        <input type="checkbox" onclick="markDay('d0605')" id="d0605" title="06/05" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0705')" id="d0705" title="07/05" />
+        <input type="checkbox" onclick="markDay('d0805')" id="d0805" title="08/05" />
+        <input type="checkbox" onclick="markDay('d0905')" id="d0905" title="09/05" />
+        <input type="checkbox" onclick="markDay('d1005')" id="d1005" title="10/05" />
+        <input type="checkbox" onclick="markDay('d1105')" id="d1105" title="11/05" />
+        <input type="checkbox" onclick="markDay('d1205')" id="d1205" title="12/05" />
+        <input type="checkbox" onclick="markDay('d1305')" id="d1305" title="13/05" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1405')" id="d1405" title="14/05" />
+        <input type="checkbox" onclick="markDay('d1505')" id="d1505" title="15/05" />
+        <input type="checkbox" onclick="markDay('d1605')" id="d1605" title="16/05" />
+        <input type="checkbox" onclick="markDay('d1705')" id="d1705" title="17/05" />
+        <input type="checkbox" onclick="markDay('d1805')" id="d1805" title="18/05" />
+        <input type="checkbox" onclick="markDay('d1905')" id="d1905" title="19/05" />
+        <input type="checkbox" onclick="markDay('d2005')" id="d2005" title="20/05" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2105')" id="d2105" title="21/05" />
+        <input type="checkbox" onclick="markDay('d2205')" id="d2205" title="22/05" />
+        <input type="checkbox" onclick="markDay('d2305')" id="d2305" title="23/05" />
+        <input type="checkbox" onclick="markDay('d2405')" id="d2405" title="24/05" />
+        <input type="checkbox" onclick="markDay('d2505')" id="d2505" title="25/05" />
+        <input type="checkbox" onclick="markDay('d2605')" id="d2605" title="26/05" />
+        <input type="checkbox" onclick="markDay('d2705')" id="d2705" title="27/05" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2805')" id="d2805" title="28/05" />
+        <input type="checkbox" onclick="markDay('d2905')" id="d2905" title="29/05" />
+        <input type="checkbox" onclick="markDay('d3005')" id="d3005" title="30/05" />
+        <input type="checkbox" onclick="markDay('d3105')" id="d3105" title="31/05" />
+        <!-------------------------------- JUNHO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0106')" id="d0106" title="01/06" />
+        <input type="checkbox" onclick="markDay('d0206')" id="d0206" title="02/06" />
+        <input type="checkbox" onclick="markDay('d0306')" id="d0306" title="03/06" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0406')" id="d0406" title="04/06" />
+        <input type="checkbox" onclick="markDay('d0506')" id="d0506" title="05/06" />
+        <input type="checkbox" onclick="markDay('d0606')" id="d0606" title="06/06" />
+        <input type="checkbox" onclick="markDay('d0706')" id="d0706" title="07/06" />
+        <input type="checkbox" onclick="markDay('d0806')" id="d0806" title="08/06" />
+        <input type="checkbox" onclick="markDay('d0906')" id="d0906" title="09/06" />
+        <input type="checkbox" onclick="markDay('d1006')" id="d1006" title="10/06" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1106')" id="d1106" title="11/06" />
+        <input type="checkbox" onclick="markDay('d1206')" id="d1206" title="12/06" />
+        <input type="checkbox" onclick="markDay('d1306')" id="d1306" title="13/06" />
+        <input type="checkbox" onclick="markDay('d1406')" id="d1406" title="14/06" />
+        <input type="checkbox" onclick="markDay('d1506')" id="d1506" title="15/06" />
+        <input type="checkbox" onclick="markDay('d1606')" id="d1606" title="16/06" />
+        <input type="checkbox" onclick="markDay('d1706')" id="d1706" title="17/06" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1806')" id="d1806" title="18/06" />
+        <input type="checkbox" onclick="markDay('d1906')" id="d1906" title="19/06" />
+        <input type="checkbox" onclick="markDay('d2006')" id="d2006" title="20/06" />
+        <input type="checkbox" onclick="markDay('d2106')" id="d2106" title="21/06" />
+        <input type="checkbox" onclick="markDay('d2206')" id="d2206" title="22/06" />
+        <input type="checkbox" onclick="markDay('d2306')" id="d2306" title="23/06" />
+        <input type="checkbox" onclick="markDay('d2406')" id="d2406" title="24/06" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2506')" id="d2506" title="25/06" />
+        <input type="checkbox" onclick="markDay('d2606')" id="d2606" title="26/06" />
+        <input type="checkbox" onclick="markDay('d2706')" id="d2706" title="27/06" />
+        <input type="checkbox" onclick="markDay('d2806')" id="d2806" title="28/06" />
+        <input type="checkbox" onclick="markDay('d2906')" id="d2906" title="29/06" />
+        <input type="checkbox" onclick="markDay('d3006')" id="d3006" title="30/06" />
+        <!-------------------------------- JULHO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0107')" id="d0107" title="01/07" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0207')" id="d0207" title="02/07" />
+        <input type="checkbox" onclick="markDay('d0307')" id="d0307" title="03/07" />
+        <input type="checkbox" onclick="markDay('d0407')" id="d0407" title="04/07" />
+        <input type="checkbox" onclick="markDay('d0507')" id="d0507" title="05/07" />
+        <input type="checkbox" onclick="markDay('d0607')" id="d0607" title="06/07" />
+        <input type="checkbox" onclick="markDay('d0707')" id="d0707" title="07/07" />
+        <input type="checkbox" onclick="markDay('d0807')" id="d0807" title="08/07" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0907')" id="d0907" title="09/07" />
+        <input type="checkbox" onclick="markDay('d1007')" id="d1007" title="10/07" />
+        <input type="checkbox" onclick="markDay('d1107')" id="d1107" title="11/07" />
+        <input type="checkbox" onclick="markDay('d1207')" id="d1207" title="12/07" />
+        <input type="checkbox" onclick="markDay('d1307')" id="d1307" title="13/07" />
+        <input type="checkbox" onclick="markDay('d1407')" id="d1407" title="14/07" />
+        <input type="checkbox" onclick="markDay('d1507')" id="d1507" title="15/07" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1607')" id="d1607" title="16/07" />
+        <input type="checkbox" onclick="markDay('d1707')" id="d1707" title="17/07" />
+        <input type="checkbox" onclick="markDay('d1807')" id="d1807" title="18/07" />
+        <input type="checkbox" onclick="markDay('d1907')" id="d1907" title="19/07" />
+        <input type="checkbox" onclick="markDay('d2007')" id="d2007" title="20/07" />
+        <input type="checkbox" onclick="markDay('d2107')" id="d2107" title="21/07" />
+        <input type="checkbox" onclick="markDay('d2207')" id="d2207" title="22/07" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2307')" id="d2307" title="23/07" />
+        <input type="checkbox" onclick="markDay('d2407')" id="d2407" title="24/07" />
+        <input type="checkbox" onclick="markDay('d2507')" id="d2507" title="25/07" />
+        <input type="checkbox" onclick="markDay('d2607')" id="d2607" title="26/07" />
+        <input type="checkbox" onclick="markDay('d2707')" id="d2707" title="27/07" />
+        <input type="checkbox" onclick="markDay('d2807')" id="d2807" title="28/07" />
+        <input type="checkbox" onclick="markDay('d2907')" id="d2907" title="29/07" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d3007')" id="d3007" title="30/07" />
+        <input type="checkbox" onclick="markDay('d3107')" id="d3107" title="31/07" />
+        <!-------------------------------- AGOSTO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0108')" id="d0108" title="01/08" />
+        <input type="checkbox" onclick="markDay('d0208')" id="d0208" title="02/08" />
+        <input type="checkbox" onclick="markDay('d0308')" id="d0308" title="03/08" />
+        <input type="checkbox" onclick="markDay('d0408')" id="d0408" title="04/08" />
+        <input type="checkbox" onclick="markDay('d0508')" id="d0508" title="05/08" />
+      </div>
+
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0608')" id="d0608" title="06/08" />
+        <input type="checkbox" onclick="markDay('d0708')" id="d0708" title="07/08" />
+        <input type="checkbox" onclick="markDay('d0808')" id="d0808" title="08/08" />
+        <input type="checkbox" onclick="markDay('d0908')" id="d0908" title="09/08" />
+        <input type="checkbox" onclick="markDay('d1008')" id="d1008" title="10/08" />
+        <input type="checkbox" onclick="markDay('d1108')" id="d1108" title="11/08" />
+        <input type="checkbox" onclick="markDay('d1208')" id="d1208" title="12/08" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1308')" id="d1308" title="13/08" />
+        <input type="checkbox" onclick="markDay('d1408')" id="d1408" title="14/08" />
+        <input type="checkbox" onclick="markDay('d1508')" id="d1508" title="15/08" />
+        <input type="checkbox" onclick="markDay('d1608')" id="d1608" title="16/08" />
+        <input type="checkbox" onclick="markDay('d1708')" id="d1708" title="17/08" />
+        <input type="checkbox" onclick="markDay('d1808')" id="d1808" title="18/08" />
+        <input type="checkbox" onclick="markDay('d1908')" id="d1908" title="19/08" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2008')" id="d2008" title="20/08" />
+        <input type="checkbox" onclick="markDay('d2108')" id="d2108" title="21/08" />
+        <input type="checkbox" onclick="markDay('d2208')" id="d2208" title="22/08" />
+        <input type="checkbox" onclick="markDay('d2308')" id="d2308" title="23/08" />
+        <input type="checkbox" onclick="markDay('d2408')" id="d2408" title="24/08" />
+        <input type="checkbox" onclick="markDay('d2508')" id="d2508" title="25/08" />
+        <input type="checkbox" onclick="markDay('d2608')" id="d2608" title="26/08" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2708')" id="d2708" title="27/08" />
+        <input type="checkbox" onclick="markDay('d2808')" id="d2808" title="28/08" />
+        <!-------------------------------- SETEMBRO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d2908')" id="d2908" title="29/08" />
+        <input type="checkbox" onclick="markDay('d3008')" id="d3008" title="30/08" />
+        <input type="checkbox" onclick="markDay('d3108')" id="d3108" title="31/08" />
+        <input type="checkbox" onclick="markDay('d0109')" id="d0109" title="01/09" />
+        <input type="checkbox" onclick="markDay('d0209')" id="d0209" title="02/09" />
+      </div>
+
+      <div class="day">
+
+        <input type="checkbox" onclick="markDay('d0309')" id="d0309" title="03/09" />
+        <input type="checkbox" onclick="markDay('d0409')" id="d0409" title="04/09" />
+        <input type="checkbox" onclick="markDay('d0509')" id="d0509" title="05/09" />
+        <input type="checkbox" onclick="markDay('d0609')" id="d0609" title="06/09" />
+        <input type="checkbox" onclick="markDay('d0709')" id="d0709" title="07/09" />
+        <input type="checkbox" onclick="markDay('d0809')" id="d0809" title="08/09" />
+        <input type="checkbox" onclick="markDay('d0909')" id="d0909" title="09/09" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1009')" id="d1009" title="10/09" />
+        <input type="checkbox" onclick="markDay('d1109')" id="d1109" title="11/09" />
+        <input type="checkbox" onclick="markDay('d1209')" id="d1209" title="12/09" />
+        <input type="checkbox" onclick="markDay('d1309')" id="d1309" title="13/09" />
+        <input type="checkbox" onclick="markDay('d1409')" id="d1409" title="14/09" />
+        <input type="checkbox" onclick="markDay('d1509')" id="d1509" title="15/09" />
+        <input type="checkbox" onclick="markDay('d1609')" id="d1609" title="16/09" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1709')" id="d1709" title="17/09" />
+        <input type="checkbox" onclick="markDay('d1809')" id="d1809" title="18/09" />
+        <input type="checkbox" onclick="markDay('d1909')" id="d1909" title="19/09" />
+        <input type="checkbox" onclick="markDay('d2009')" id="d2009" title="20/09" />
+        <input type="checkbox" onclick="markDay('d2109')" id="d2109" title="21/09" />
+        <input type="checkbox" onclick="markDay('d2209')" id="d2209" title="22/09" />
+        <input type="checkbox" onclick="markDay('d2309')" id="d2309" title="23/09" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2409')" id="d2409" title="24/09" />
+        <input type="checkbox" onclick="markDay('d2509')" id="d2509" title="25/09" />
+        <input type="checkbox" onclick="markDay('d2609')" id="d2609" title="26/09" />
+        <input type="checkbox" onclick="markDay('d2709')" id="d2709" title="27/09" />
+        <input type="checkbox" onclick="markDay('d2809')" id="d2809" title="28/09" />
+        <input type="checkbox" onclick="markDay('d2909')" id="d2909" title="29/09" />
+        <input type="checkbox" onclick="markDay('d3009')" id="d3009" title="30/09" />
+      </div>
+
+
+      <div class="day">
+        <!-------------------------------- OUTUBRO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0110')" id="d0110" title="01/10" />
+        <input type="checkbox" onclick="markDay('d0210')" id="d0210" title="02/10" />
+        <input type="checkbox" onclick="markDay('d0310')" id="d0310" title="03/10" />
+        <input type="checkbox" onclick="markDay('d0410')" id="d0410" title="04/10" />
+        <input type="checkbox" onclick="markDay('d0510')" id="d0510" title="05/10" />
+        <input type="checkbox" onclick="markDay('d0610')" id="d0610" title="06/10" />
+        <input type="checkbox" onclick="markDay('d0710')" id="d0710" title="07/10" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0810')" id="d0810" title="08/10" />
+        <input type="checkbox" onclick="markDay('d0910')" id="d0910" title="09/10" />
+        <input type="checkbox" onclick="markDay('d1010')" id="d1010" title="10/10" />
+        <input type="checkbox" onclick="markDay('d1110')" id="d1110" title="11/10" />
+        <input type="checkbox" onclick="markDay('d1210')" id="d1210" title="12/10" />
+        <input type="checkbox" onclick="markDay('d1310')" id="d1310" title="13/10" />
+        <input type="checkbox" onclick="markDay('d1410')" id="d1410" title="14/10" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1510')" id="d1510" title="15/10" />
+        <input type="checkbox" onclick="markDay('d1610')" id="d1610" title="16/10" />
+        <input type="checkbox" onclick="markDay('d1710')" id="d1710" title="17/10" />
+        <input type="checkbox" onclick="markDay('d1810')" id="d1810" title="18/10" />
+        <input type="checkbox" onclick="markDay('d1910')" id="d1910" title="19/10" />
+        <input type="checkbox" onclick="markDay('d2010')" id="d2010" title="20/10" />
+        <input type="checkbox" onclick="markDay('d2110')" id="d2110" title="21/10" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2210')" id="d2210" title="22/10" />
+        <input type="checkbox" onclick="markDay('d2310')" id="d2310" title="23/10" />
+        <input type="checkbox" onclick="markDay('d2410')" id="d2410" title="24/10" />
+        <input type="checkbox" onclick="markDay('d2510')" id="d2510" title="25/10" />
+        <input type="checkbox" onclick="markDay('d2610')" id="d2610" title="26/10" />
+        <input type="checkbox" onclick="markDay('d2710')" id="d2710" title="27/10" />
+        <input type="checkbox" onclick="markDay('d2810')" id="d2810" title="28/10" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2910')" id="d2910" title="29/10" />
+        <input type="checkbox" onclick="markDay('d3010')" id="d3010" title="30/10" />
+        <input type="checkbox" onclick="markDay('d3110')" id="d3110" title="31/10" />
+        <!-------------------------------- NOVEMBRO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0111')" id="d0111" title="01/11" />
+        <input type="checkbox" onclick="markDay('d0211')" id="d0211" title="02/11" />
+        <input type="checkbox" onclick="markDay('d0311')" id="d0311" title="03/11" />
+        <input type="checkbox" onclick="markDay('d0411')" id="d0411" title="04/11" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0511')" id="d0511" title="05/11" />
+        <input type="checkbox" onclick="markDay('d0611')" id="d0611" title="06/11" />
+        <input type="checkbox" onclick="markDay('d0711')" id="d0711" title="07/11" />
+        <input type="checkbox" onclick="markDay('d0811')" id="d0811" title="08/11" />
+        <input type="checkbox" onclick="markDay('d0911')" id="d0911" title="09/11" />
+        <input type="checkbox" onclick="markDay('d1011')" id="d1011" title="10/11" />
+        <input type="checkbox" onclick="markDay('d1111')" id="d1111" title="11/11" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1211')" id="d1211" title="12/11" />
+        <input type="checkbox" onclick="markDay('d1311')" id="d1311" title="13/11" />
+        <input type="checkbox" onclick="markDay('d1411')" id="d1411" title="14/11" />
+        <input type="checkbox" onclick="markDay('d1511')" id="d1511" title="15/11" />
+        <input type="checkbox" onclick="markDay('d1611')" id="d1611" title="16/11" />
+        <input type="checkbox" onclick="markDay('d1711')" id="d1711" title="17/11" />
+        <input type="checkbox" onclick="markDay('d1811')" id="d1811" title="18/11" />
+      </div>
+
+
+
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1911')" id="d1911" title="19/11" />
+        <input type="checkbox" onclick="markDay('d2011')" id="d2011" title="20/11" />
+        <input type="checkbox" onclick="markDay('d2111')" id="d2111" title="21/11" />
+        <input type="checkbox" onclick="markDay('d2211')" id="d2211" title="22/11" />
+        <input type="checkbox" onclick="markDay('d2311')" id="d2311" title="23/11" />
+        <input type="checkbox" onclick="markDay('d2411')" id="d2411" title="24/11" />
+        <input type="checkbox" onclick="markDay('d2511')" id="d2511" title="25/11" />
+      </div>
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2611')" id="d2611" title="26/11" />
+        <input type="checkbox" onclick="markDay('d2711')" id="d2711" title="27/11" />
+        <input type="checkbox" onclick="markDay('d2811')" id="d2811" title="28/11" />
+        <input type="checkbox" onclick="markDay('d2911')" id="d2911" title="29/11" />
+        <input type="checkbox" onclick="markDay('d3011')" id="d3011" title="30/11" />
+        <!-------------------------------- DEZEMBRO ----------------------------------------------->
+        <input type="checkbox" onclick="markDay('d0112')" id="d0112" title="01/12" />
+        <input type="checkbox" onclick="markDay('d0212')" id="d0212" title="02/12" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d0312')" id="d0312" title="03/12" />
+        <input type="checkbox" onclick="markDay('d0412')" id="d0412" title="04/12" />
+        <input type="checkbox" onclick="markDay('d0512')" id="d0512" title="05/12" />
+        <input type="checkbox" onclick="markDay('d0712')" id="d0712" title="07/12" />
+        <input type="checkbox" onclick="markDay('d0612')" id="d0612" title="06/12" />
+        <input type="checkbox" onclick="markDay('d0812')" id="d0812" title="08/12" />
+        <input type="checkbox" onclick="markDay('d0912')" id="d0912" title="09/12" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1012')" id="d1012" title="10/12" />
+        <input type="checkbox" onclick="markDay('d1112')" id="d1112" title="11/12" />
+        <input type="checkbox" onclick="markDay('d1212')" id="d1212" title="12/12" />
+        <input type="checkbox" onclick="markDay('d1312')" id="d1312" title="13/12" />
+        <input type="checkbox" onclick="markDay('d1412')" id="d1412" title="14/12" />
+        <input type="checkbox" onclick="markDay('d1512')" id="d1512" title="15/12" />
+        <input type="checkbox" onclick="markDay('d1612')" id="d1612" title="16/12" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d1712')" id="d1712" title="17/12" />
+        <input type="checkbox" onclick="markDay('d1812')" id="d1812" title="18/12" />
+        <input type="checkbox" onclick="markDay('d1912')" id="d1912" title="19/12" />
+        <input type="checkbox" onclick="markDay('d2012')" id="d2012" title="20/12" />
+        <input type="checkbox" onclick="markDay('d2112')" id="d2112" title="21/12" />
+        <input type="checkbox" onclick="markDay('d2212')" id="d2212" title="22/12" />
+        <input type="checkbox" onclick="markDay('d2312')" id="d2312" title="23/12" />
+      </div>
+
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d2412')" id="d2412" title="24/12" />
+        <input type="checkbox" onclick="markDay('d2512')" id="d2512" title="25/12" />
+        <input type="checkbox" onclick="markDay('d2612')" id="d2612" title="26/12" />
+        <input type="checkbox" onclick="markDay('d2712')" id="d2712" title="27/12" />
+        <input type="checkbox" onclick="markDay('d2812')" id="d2812" title="28/12" />
+        <input type="checkbox" onclick="markDay('d2912')" id="d2912" title="29/12" />
+        <input type="checkbox" onclick="markDay('d3012')" id="d3012" title="30/12" />
+      </div>
+
+      <div class="day">
+        <input type="checkbox" onclick="markDay('d3112')" id="d3112" title="31/12" />
+      </div>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
